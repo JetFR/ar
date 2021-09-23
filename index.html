@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>ECV - Augmented Reality</title>
     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     </head>
 <style>
   .arjs-loader {
@@ -18,19 +19,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column
   }
 
   .arjs-loader div {
     text-align: center;
     font-size: 1.25em;
     color: white;
+
   }
+    .logo_loader {
+        display: flex;
+        
+    }
+    .text_loader {
+        font-family: 'Poppins';
+        font-weight: 300;
+        padding-top: 32px;
+    }
 </style>
 
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
-    <div>Loading, please wait...</div>
+   <img src="logo.png" class="logo_loader"> 
+    <div class="text_loader">Chargement, veuillez patienter...</div>
   </div>
   <a-scene
     vr-mode-ui="enabled: false;"
