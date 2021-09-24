@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(77, 117, 142, 0.8);
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -30,6 +30,7 @@
   }
     .logo_loader {
         display: flex;
+        width: 300px;
         
     }
     .text_loader {
@@ -37,9 +38,10 @@
         font-weight: 300;
         padding-top: 32px;
     }
+
 </style>
 
-<body style="margin : 0px; overflow: hidden;">
+<body style="margin : 0px; overflow: hidden; position: relative">
   <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
    <img src="logo.png" class="logo_loader"> 
@@ -62,7 +64,7 @@
       smoothThreshold="5"
     >
       <a-entity
-        gltf-model="https://jetfr.github.io/ar/vin_05.gltf"
+        gltf-model="https://jetfr.github.io/ar/vin_07.gltf"
         scale="0.1 0.1 0.1"
         position="0 0 0"
       >
