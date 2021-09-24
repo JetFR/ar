@@ -47,13 +47,13 @@
     <div class="text_loader">Chargement, veuillez patienter...</div>
   </div>
   
-  <!--<a-scene
+  <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
-     we use cors proxy to avoid cross-origin problems 
+    <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
       type="nft"
       url="https://jetfr.github.io/ar/qr/qr" 
@@ -65,20 +65,13 @@
       <a-entity
         gltf-model="https://jetfr.github.io/ar/vin_07.gltf"
         scale="1 1 1"
-        rotate="0 90 0"
+        rotate="0 180 0"
         position="0 0 0"
       >
       </a-entity>
      
     </a-nft>     
     <a-entity camera></a-entity>
-  </a-scene>-->
-  <a-entity
-        gltf-model="https://jetfr.github.io/ar/vin_07.gltf"
-        scale="1 1 1"
-        rotate="0 90 0"
-        position="0 0 0"
-      >
-      </a-entity>
+  </a-scene>
   
 </body>
